@@ -25,6 +25,8 @@ public class ChatImageView extends ImageView {
     Paint paint;
     Bitmap bitmap;//前景图
     Bitmap bgBitmap;//.9.png 背景图
+    Drawable drawable;
+    Drawable drawableBg;
 
     // 控件默认长、宽
     private int defaultWidth = 0;
@@ -63,8 +65,8 @@ public class ChatImageView extends ImageView {
 
     @Override
     protected void onDraw(Canvas canvas) {
-        Drawable drawable=getDrawable();
-        Drawable drawableBg=getBackground();
+         drawable=getDrawable();
+         drawableBg=getBackground();
 //        Drawable drawable=getResources().getDrawable(R.drawable.psb);
 //        Drawable drawableBg=getResources().getDrawable(R.drawable.novel_like_num_night);
 
